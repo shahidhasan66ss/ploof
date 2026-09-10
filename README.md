@@ -29,9 +29,11 @@ flutter pub get
 flutter run
 ```
 
-This repository was assembled in an environment where the Flutter SDK was not installed, so runtime validation must be run from a Flutter-equipped machine or CI:
+This repository was assembled in an environment where the Flutter SDK was not installed, so runtime validation must be run from a Flutter-equipped machine or CI. The sandbox also did not contain Gradle's binary wrapper JAR; if your Flutter install does not restore it during setup, run the following once before building to regenerate platform wrapper files (it preserves `lib/`):
 
 ```bash
+flutter create --platforms=android,ios .
+flutter pub get
 flutter analyze
 flutter test
 flutter build apk --release
