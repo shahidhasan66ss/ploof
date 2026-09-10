@@ -1,0 +1,33 @@
+name: chatpop
+description: A playful, offline-first creator for clearly fictional chat stories.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/illustrations/
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.6.2
+  shared_preferences: ^2.3.3
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
+  image_picker: ^1.1.2
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  image: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# This project intentionally keeps creations in local JSON files. No accounts,
+# databases, cloud services, or network APIs are required.
